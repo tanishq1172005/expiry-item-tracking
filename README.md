@@ -2,10 +2,6 @@
 
 **Stack:** MongoDB · Express · Node.js · React (MERN)
 
----
-
-## Core Requirements
-
 ### 1. Authentication & User Management
 - [ ] User registration and login with JWT
 - [ ] Protected routes middleware
@@ -109,3 +105,17 @@
 |--------|----------|-------------|
 | GET | /api/dashboard/stats | Waste score, counts by status |
 | GET | /api/dashboard/expiring | Items expiring in 24h |
+
+---
+
+## Frontend
+
+### Routes
+| Path | Component | Access |
+|------|-----------|--------|
+| /login | LoginForm | Public |
+| /register | RegisterForm | Public |
+| /dashboard | Dashboard | Private |
+| /household | HouseholdManager | Private |
+| /items | InventoryList | Private |
+| /add | AddItemForm | Private |
